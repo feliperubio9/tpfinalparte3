@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="left" id="navbar">
+    <nav class="left Tarjetitas" id="navbar">
         <a href="#inicio">
             <i>Star_Shine</i>
             <div>Inicio</div>
@@ -36,21 +36,21 @@
             <div>Creditos</div>
         </a>
     </nav>
-    <div class="portada responsive" id="inicio">
-        <video src="img/fondo2.mp4" alt="Portada" autoplay muted loop></video>
+    <div class="portada responsive grid no-padding" id="inicio">
+        <img src="img/5.png" class="Portada s12"></img>
+        <h1>Hermana Multiverso</h1>
+        <h5>Felipe Rubio y Guadalupe Gallina.</h5>
     </div>
     <main class="responsive">
-        <div class="padding center-align responsive">
-            <p>Felipe Rubio y Guadalupe Gallina.</p>
-        </div>
         <section id="novela" class="padding">
             <h2>Novela</h2>
+
             <p>
                 Aventura gráfica interactiva en p5.js para el TP#Final Etapa 1. Basada en el libro interactivo de
                 ciencia ficción "Hermana del multiverso" de la saga "Elige tu propia aventura" por C.E. Berger.
             </p>
             <div class="grid">
-                <article class="no-padding s12">
+                <article class="no-padding Tarjetitas s12">
                     <img class="responsive large" src="tpfinalparte1\images\Pantalla_0.png">
                     <div class="padding">
                         <h5>Aventura Gráfica "Hermana del Multiverso"</h5>
@@ -65,12 +65,13 @@
                 </article>
             </div>
         </section>
+        <hr>
         <section id="runner" class="padding">
-            <h2>Runner</h2>
+            <h2 class="padding">Runner</h2>
             <p>Videojuego web en p5.js para el TP#Final Etapa 2. Es un minijuego estilo "Runner" que transcurre en una
                 de las ramificaciones de la historia de la aventura gráfica interactiva del TP#Final Etapa 1.</p>
             <div class="grid">
-                <article class="no-padding s12">
+                <article class="no-padding Tarjetitas s12">
                     <img class="responsive large" src="img/runner_thumbnail.png">
                     <div class="padding">
                         <h5>Videojuego web "Hermana del Multiverso"</h5>
@@ -83,42 +84,83 @@
                 </article>
             </div>
         </section>
-        <section id="proceso">
-            <h2>Proceso de producción del juego</h2>
-            <article>
+        <hr>
+        <section id="proceso" class="padding ">
+            <h2 class="padding">Proceso de producción del juego</h2>
+            <article class="Tarjetitas ">
                 <aside class="right medium-width small-height padding">
                     <img class="responsive" src="img/lab.png">
                 </aside>
                 <h5>Primeras ideas</h5>
-                <p>En un principio, nuestra idea era desarrollar un minijuego en el que el jugador pudiera recorrer el laboratorio de la madre de la protagonista y resolver distintos puzzles dentro de un tiempo limitado antes de que Jake, el alumno de su madre, lo descubriera. Pero, a medida que avanzábamos con la idea, nos dimos cuenta de que, si bien era una buena propuesta, el desarrollo nos iba a tomar más tiempo del que teníamos. Finalmente optamos por aprovechar otra escena de la historia, en la que la protagonista debe escapar de uno de los secuaces del Señor Browning. A partir de esta situación, decidimos desarrollar un minijuego del género runner, una alternativa que nos permitía mantener la tensión de la escena.</p>
+                <p>En un principio, nuestra idea era desarrollar un minijuego en el que el jugador pudiera recorrer el
+                    laboratorio de la madre de la protagonista y resolver distintos puzzles dentro de un tiempo limitado
+                    antes de que Jake, el alumno de su madre, lo descubriera. Pero, a medida que avanzábamos con la
+                    idea, nos dimos cuenta de que, si bien era una buena propuesta, el desarrollo nos iba a tomar más
+                    tiempo del que teníamos. Finalmente optamos por aprovechar otra escena de la historia, en la que la
+                    protagonista debe escapar de uno de los secuaces del Señor Browning. A partir de esta situación,
+                    decidimos desarrollar un minijuego del género runner, una alternativa que nos permitía mantener la
+                    tensión de la escena.</p>
             </article>
-            <article>
+            <article class="Tarjetitas">
                 <aside class="left medium-width small-height padding">
                     <img class="responsive" src="img/proceso.png">
                 </aside>
                 <h5>Primeras versiones</h5>
-                <p>Mientras desarrollábamos el runner, todavía en una etapa bastante precaria en la que utilizábamos cuadrados de colores en lugar de los sprites definitivos, habíamos pensado en generar los obstáculos de forma aleatoria a lo largo de los tres carriles por los que podía moverse el jugador. Sin embargo, nos encontramos con un problema, aunque aumentáramos la distancia entre los obstáculos, muchas veces estos terminaban superponiéndose, lo que hacía imposible encontrar una combinación de movimientos válida para esquivarlos. Por eso decidimos optar por una estrategia similar a la que utiliza uno de los juegos para celular más conocidos: Subway Surfers. En este juego, los obstáculos siguen ciertas combinaciones preestablecidas, en lugar de generarse completamente al azar. A partir de esta idea nació nuestro sistema de hileras, que consiste en generar distintas hileras de obstáculos a lo largo del recorrido, cada una con un objeto en cada carril. Esto nos permitía controlar mejor la distancia horizontal entre los obstáculos y, al mismo tiempo, darle al jugador la posibilidad de elegir por qué carril avanzar según los obstáculos que tuviera enfrente.</p>
+                <p>Mientras desarrollábamos el runner, todavía en una etapa bastante precaria en la que utilizábamos
+                    cuadrados de colores en lugar de los sprites definitivos, habíamos pensado en generar los obstáculos
+                    de forma aleatoria a lo largo de los tres carriles por los que podía moverse el jugador. Sin
+                    embargo, nos encontramos con un problema, aunque aumentáramos la distancia entre los obstáculos,
+                    muchas veces estos terminaban superponiéndose, lo que hacía imposible encontrar una combinación de
+                    movimientos válida para esquivarlos. Por eso decidimos optar por una estrategia similar a la que
+                    utiliza uno de los juegos para celular más conocidos: Subway Surfers. En este juego, los obstáculos
+                    siguen ciertas combinaciones preestablecidas, en lugar de generarse completamente al azar. A partir
+                    de esta idea nació nuestro sistema de hileras, que consiste en generar distintas hileras de
+                    obstáculos a lo largo del recorrido, cada una con un objeto en cada carril. Esto nos permitía
+                    controlar mejor la distancia horizontal entre los obstáculos y, al mismo tiempo, darle al jugador la
+                    posibilidad de elegir por qué carril avanzar según los obstáculos que tuviera enfrente.</p>
             </article>
-            <article>
+            <article class="Tarjetitas">
                 <aside class="right medium-width medium-height padding">
                     <img class="responsive" src="img/code.png">
                 </aside>
                 <h5>Funcionamiento</h5>
-                <p>Finalmente, terminamos con un código en el que se crea una instancia de la clase "Juego", que se encarga de controlar toda la aplicación. Una de las variables más importantes de esta clase es "estado", que determina qué pantalla se muestra, el menú principal, los créditos, las instrucciones o el runner. Cuando "estado" pasa a ser igual a "runner", se crea una nueva instancia de la clase "Runner". Al iniciarse, esta crea 70 instancias de la clase "Hileras", separadas entre sí por una distancia de 300 píxeles en el eje X. Dentro de la clase "Hileras" se crea un arreglo de tres casillas, en las que se asigna un objeto aleatorio. Estos objetos pueden ser una mesa, una silla, una persona o un espacio vacío. Cada casilla representa uno de los tres carriles por los que puede moverse el jugador. Luego, de vuelta en la clase "Runner", mediante un ciclo for se recorren las hileras y se guardan los objetos generados en tres arreglos diferentes, dependiendo de si son mesas, sillas o personas. Esto permite a la clase "Juego" acceder más fácilmente a las propiedades de cada uno de esos objetos durante el resto del juego. Entre las distintas hileras también se generan monedas, ubicadas en un carril aleatorio. Por otro lado, se crea una instancia de la clase "Jugador", que representa al personaje controlado por el usuario. Este puede moverse entre los tres carriles utilizando las flechas del teclado y realizar dos acciones, saltar con la tecla de espacio y deslizarse con shift. Estas dos últimas acciones permiten esquivar algunos obstáculos, el jugador puede saltar por encima de las mesas y deslizarse por debajo de las sillas. En cambio, las personas no pueden atravesarse de ninguna manera, por lo que es necesario cambiar de carril para evitarlas.Si se detecta una colisión con alguno de los obstáculos, se reproduce una pequeña animación que hace referencia a uno de los finales de la aventura gráfica. Por último, si el jugador consigue recolectar 25 monedas, se habilita la posibilidad de ganar la partida. Para conseguirlo, debe llegar hasta la puerta que aparece dibujada en el fondo de la escena y salir por ella.</p>
+                <p>Finalmente, terminamos con un código en el que se crea una instancia de la clase "Juego", que se
+                    encarga de controlar toda la aplicación. Una de las variables más importantes de esta clase es
+                    "estado", que determina qué pantalla se muestra, el menú principal, los créditos, las instrucciones
+                    o el runner. Cuando "estado" pasa a ser igual a "runner", se crea una nueva instancia de la clase
+                    "Runner". Al iniciarse, esta crea 70 instancias de la clase "Hileras", separadas entre sí por una
+                    distancia de 300 píxeles en el eje X. Dentro de la clase "Hileras" se crea un arreglo de tres
+                    casillas, en las que se asigna un objeto aleatorio. Estos objetos pueden ser una mesa, una silla,
+                    una persona o un espacio vacío. Cada casilla representa uno de los tres carriles por los que puede
+                    moverse el jugador. Luego, de vuelta en la clase "Runner", mediante un ciclo for se recorren las
+                    hileras y se guardan los objetos generados en tres arreglos diferentes, dependiendo de si son mesas,
+                    sillas o personas. Esto permite a la clase "Juego" acceder más fácilmente a las propiedades de cada
+                    uno de esos objetos durante el resto del juego. Entre las distintas hileras también se generan
+                    monedas, ubicadas en un carril aleatorio. Por otro lado, se crea una instancia de la clase
+                    "Jugador", que representa al personaje controlado por el usuario. Este puede moverse entre los tres
+                    carriles utilizando las flechas del teclado y realizar dos acciones, saltar con la tecla de espacio
+                    y deslizarse con shift. Estas dos últimas acciones permiten esquivar algunos obstáculos, el jugador
+                    puede saltar por encima de las mesas y deslizarse por debajo de las sillas. En cambio, las personas
+                    no pueden atravesarse de ninguna manera, por lo que es necesario cambiar de carril para evitarlas.Si
+                    se detecta una colisión con alguno de los obstáculos, se reproduce una pequeña animación que hace
+                    referencia a uno de los finales de la aventura gráfica. Por último, si el jugador consigue
+                    recolectar 25 monedas, se habilita la posibilidad de ganar la partida. Para conseguirlo, debe llegar
+                    hasta la puerta que aparece dibujada en el fondo de la escena y salir por ella.</p>
             </article>
         </section>
+        <hr>
         <section id="creditos" class="padding">
-            <h2>Creditos</h2>
+            <h2 class="padding">Creditos</h2>
             <div class="grid">
                 <div class="s2"></div>
-                <article class="no-padding tertiary-container s4">
-                    <img class="responsive large" src="/beer-and-woman.svg">
+                <article class="no-padding Tarjetitas s4">
+                    <img class="responsive large" src="img/lupe.jpg">
                     <div class="padding">
                         <h5>Guadalupe Gallina</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </article>
-                <article class="no-padding tertiary-container s4">
+                <article class="no-padding Tarjetitas s4">
                     <img class="responsive large" src="img/feli.png">
                     <div class="padding">
                         <h5>Felipe Rubio</h5>
