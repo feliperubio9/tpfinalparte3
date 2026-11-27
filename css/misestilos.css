@@ -5,34 +5,52 @@
 
 body {
     font-family: "MiFuente", sans-serif;
-    background-color: #0e2835;
+    background-color: #111a31;
 }
+
 
 section {
-    margin-bottom: 200px;
+    margin-bottom: 30px;
 }
 
-hr {
-    border: none;
-    height: 2px;
-    background-color: #000;
-    width: 80%;
-}
 .portada {
     position: relative;
-    
+
 }
 
-.portada video {
+.portada img {
     width: 100%;
     display: flex;
 }
 
-.portada h1 {
+h1 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
+}
+
+.portada h5 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+hr {
+    padding: 20;
+    background-color: #030918;
+    margin: 20px;
+}
+
+.Tarjetitas {
+    background-color: #030918;
+    color: #ffffff;
+}
+#navbar {
+    background-color: #030918;
     color: white;
 }
 
@@ -55,5 +73,4 @@ hr {
     }
 
 }
-
 
